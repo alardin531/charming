@@ -11,17 +11,19 @@
 using namespace std;
 int main(){
     int a,b;
-    float c,d;
-    ofstream op("/Users/s20181102934/Desktop/uuu.txt");
-    ifstream ip("/Users/s20181102934/Desktop/iii.txt");
-    if(ip.is_open()){
-        ip>>a>>b>>c>>d;
-        cout<<a<<" "<<b<<" "<<c<<" "<<d<<" "<<endl;
-        
-    }
-    if(op.is_open()){
-        op<<"the final result is : "<<(a+b+c+d)/4;
-        cout<<(a+b+c+d)/4<<endl;
+    ofstream huk("/Users/s20181102934/Desktop/timi.doc ");
+    ifstream rand("/Users/s20181102934/Desktop/qieshengxuan.txt");
+    rand>>a>>b;
+    cout<<"c ="<<a+b<<endl;
+    /*if(rand.is_open()){
+        //cout<<"aha you win"<<endl;
+        rand>>a>>b;
+        cout<<a<<"   "<<b<<endl;
+        rand.close();
+    }*/
+    if(huk.is_open()){
+        huk<<a+b+90<<endl;
+        huk.close();
     }
     return 0;
 }
