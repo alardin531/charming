@@ -9,5 +9,14 @@
 #include <stdio.h>
 
 int main(){
-    int 
+    int a=0;
+    int n;
+    scanf("%d %d",&m,&n);
+    for(int j=0;j<m;j++){
+        for(int i=0;i<n;i++){
+            if(i%2==0) printf("$");
+            else printf(" ");
+        }
+        printf("\n");
+    }
 }
